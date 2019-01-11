@@ -1,8 +1,8 @@
 
 /* PHASE 12: Modal */
 
-.modal {
-    position: relative;
+.modal.is-open {
+    display: block;
 }
 
 
@@ -14,13 +14,28 @@
     bottom: 0;
     z-index: 2px;
     background-color: rgba(0,0,0,0.8);
+}
 
-
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+    line-height: 1;
+    cursor: pointer;
 }
 
 .modal-form {
     position: absolute;
-    margin: 0 auto;
+    margin-left: -220px;
+    top: 100px;
+    left: 50%;
+    width: 360px;
+    padding: 20px;
+    background: #fff;
+    z-index: 2;
+    border-radius: 5px;
+    border: 1px solid #000;
    
 }
 
@@ -34,23 +49,17 @@
   padding: 0 0 5px 0;
 }
 
-.modal-input > modal-input,
-.modal-input > textarea {
+.modal-input > modal-input {
   display: block;
   background: #fff;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(27, 26, 26);
   padding: 10px;
   width: calc(100% - 22px);
   border-radius: 5px;
 }
 
-.modal-input > modal-input:focus,
-.modal-input > textarea:focus {
+.modal-input > modal-input:focus {
   border-color: #0c0;
-}
-
-.modal-input > textarea {
-  height: 120px;
 }
 
 .modal-submit {
@@ -90,4 +99,14 @@
 
 .modal-button-alternative strong:hover {
   color: #f00;
+}
+
+.modal-form > h1 {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 300;
+}
+
+.modal-form > p {
+    margin: 0 0 20px 0;
 }

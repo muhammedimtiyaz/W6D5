@@ -233,27 +233,29 @@
   </footer>
 
 
-  <div class="modal">
+  <div class="modal is-open">
 
     <section class="modal-screen"></section>
 
-    <section class="modal-form">
-
+    <form class="modal-form">
+      <span class="modal-close"></span>
+      <h1>Welcome</h1>
+      <p>Please sign in to continue.</p>
       <div class="modal-input">
         <label for="email">Email</label>
-        <input id="email" type="text" value="">
+        <input id="email" type="text" value="sennacy@appacademy.io">
       </div>
       
       <div class="modal-input">
-        <label for="password">Post Body</label>
-        <input type="password" id="password" value="">
+        <label for="password">Password</label>
+        <input type="password" id="password" value="password">
       </div>
       <div class="modal-submit">
         <button>Sign In</button>
-        <span class="button-alternative">or <strong>Cancel</strong></span>
+        <span class="modal-button-alternative">or <strong>Cancel</strong></span>
       </div>
 
-    </section>
+    </form>
   </div>
 </body>
 </html>
