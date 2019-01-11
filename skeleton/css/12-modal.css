@@ -1,1 +1,93 @@
+
 /* PHASE 12: Modal */
+
+.modal {
+    position: relative;
+}
+
+
+.modal-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2px;
+    background-color: rgba(0,0,0,0.8);
+
+
+}
+
+.modal-form {
+    position: absolute;
+    margin: 0 auto;
+   
+}
+
+.modal-input {
+  margin: 0 0 20px 0;
+}
+
+.modal-input > label {
+  display: block;
+  font-weight: 700;
+  padding: 0 0 5px 0;
+}
+
+.modal-input > modal-input,
+.modal-input > textarea {
+  display: block;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: calc(100% - 22px);
+  border-radius: 5px;
+}
+
+.modal-input > modal-input:focus,
+.modal-input > textarea:focus {
+  border-color: #0c0;
+}
+
+.modal-input > textarea {
+  height: 120px;
+}
+
+.modal-submit {
+  margin: 20px 0 0 0;
+  padding: 0 0 3px 0;
+}
+
+.modal-submit > button {
+  position: relative;
+  padding: 10px 20px;
+  color: #fff;
+  background: #0c0;
+  font-weight: 700;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 0 #070;
+}
+
+.modal-submit > button:hover {
+  background: #0b0;
+}
+
+.modal-submit > button:active {
+  top: 3px;
+  background: #0a0;
+  box-shadow: none;
+}
+
+.modal-button-alternative {
+  padding: 0 0 0 5px;
+}
+
+.modal-button-alternative strong {
+  padding: 0 0 0 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-button-alternative strong:hover {
+  color: #f00;
+}
